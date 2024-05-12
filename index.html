@@ -1,0 +1,1521 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+
+    <!-- Slider -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <title>DEKO</title>
+
+    <!-- GSAP -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"
+    ></script>
+
+    <!-- ANIMATIONS JS FILES -->
+    <script type="module" defer src="animations.js"></script>
+  </head>
+
+  <body>
+    <!-- Hero Section -->
+    <section class="bg-[#D9D8D8] w-full">
+      <div class="hero-container w-full bg-[#D9D8D8]">
+        <div
+          class="w-full max-w-[1360px] mx-auto flex flex-col justify-between h-full"
+        >
+          <div class="flex items-center justify-between h-[68px] w-full">
+            <div class="pl-[20px] sm:pl-[40px] pt-[23px] pb-[25px]">
+              <img
+                src="./images/Logo.svg"
+                alt="Logo"
+                class="w-[93px] h-[20.8px]"
+              />
+            </div>
+            <div class="pr-[20px] sm:pr-[42px] pt-[24px] pb-[25px]">
+              <a
+                href="/"
+                class="w-[99px] h-[19px] underline text-[14px] leading-[19px] tracking-[-0.01em] text-[#111111] font-normal"
+                >Gå til deko.com</a
+              >
+            </div>
+          </div>
+          <!-- <img src="./images/HeroBg.svg" alt="" class=""> -->
+          <div
+            class="flex md:items-end items-start justify-between md:flex-row flex-col"
+          >
+            <div class="pl-[20px] sm:pl-[40px] pb-[40px]">
+              <h3
+                class="w-full max-w-[469px] font-bold text-[40px] text-[#111111] leading-[42px] tracking-[-0.04em] title text-container"
+              >
+                Brandsikre og bæredygtige træprofiler.
+                <span>Med fuld fleksibilitet.</span>
+              </h3>
+            </div>
+            <div class="pb-[47.03px] pr-[42px] pl-[20px] sm:pl-[40px] md:pl-0">
+              <img
+                src="./images/Made to be great.svg"
+                alt="Made to be great"
+                class="w-[111px] h-[46.15px]"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Second Section -->
+    <div class="bg-[#F6F6F6] w-full px-[20px] md:px-[40px]">
+      <section class="h-[674px] max-w-[1360px] w-full mx-auto relative">
+        <!-- Grid section with transparent overlay and non-visible borders -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 h-full relative z-10"
+        >
+          <div
+            class="min-h-full h-full w-full border-transparent border-r md:border-r-0 border-l bg-[#F6F6F6] bg-opacity-[0.3]"
+          ></div>
+          <div
+            class="h-full w-full border-r border-transparent border-l bg-[#F6F6F6] md:bg-transparent bg-opacity-[0.3]"
+          ></div>
+          <div
+            class="border-l lg:border-l-0 border-r h-full w-full border-transparent bg-transparent md:bg-[#F6F6F6] md:bg-opacity-[0.3]"
+          ></div>
+          <div
+            class="border-r border-l border-transparent md:border-l-0 h-full w-full"
+          ></div>
+        </div>
+        <!-- Grid section with borders. Should be used when content is needed inside the columns -->
+        <div
+          class="grid grid-cols-1 w-full md:grid-cols-2 lg:grid-cols-4 h-full absolute top-0 z-2"
+        >
+          <div class="h-full w-full border-r border-l border-[#D9D8D8]"></div>
+          <div
+            class="h-full w-full border-r border-l md:border-l-0 border-[#D9D8D8]"
+          ></div>
+          <div
+            class="h-full w-full border-r border-l lg:border-l-0 border-[#D9D8D8]"
+          ></div>
+          <div
+            class="h-full w-full border-r border-l md:border-l-0 border-[#D9D8D8]"
+          ></div>
+        </div>
+        <div
+          class="absolute top-[100px] xl:left-[225px] lg:left-[160px] md:left-[60px] z-5"
+        >
+          <h1
+            class="text-[#8A705A] leading-[47px] sm:leading-[60px] tracking-[-0.04em] text-[45px] sm:text-[60px] font-bold mx-auto max-w-[600px] w-full text-container"
+          >
+            <span class="text-animation">
+              <span> Vi har gjort det </span>
+            </span>
+            <span class="text-animation">
+              <span>brandsikkert.</span>
+            </span>
+            <span class="text-animation">
+              <span>Lydtæt. Bæredygtigt.</span>
+            </span>
+            <span class="text-animation">
+              <span>Og fleksibelt.</span>
+            </span>
+          </h1>
+        </div>
+        <div
+          class="top-[424px] xl:left-[565px] lg:left-[425px] md:left-[200px] bottom-[70px] absolute"
+        >
+          <h1
+            class="text-[#111111] leading-[47px] sm:leading-[60px] tracking-[-0.04em] text-[45px] sm:text-[60px] font-bold mx-auto max-w-[522px] w-full text-container"
+          >
+            <span class="text-animation">
+              <span>Nu er det din tur. </span>
+            </span>
+            <span class="text-animation">
+              <span>Til at gøre med det,</span>
+            </span>
+            <span class="text-animation">
+              <span>hvad du vil.</span>
+            </span>
+          </h1>
+        </div>
+      </section>
+    </div>
+
+    <!-- Én profil. Mange muligheder. -->
+    <section class="px-[20px] md:px-[40px] bg-[#F6F6F6]">
+      <!-- Header section -->
+      <div class="h-[120px] w-full max-w-[1360px] mx-auto relative">
+        <div
+          class="grid grid-cols-1 w-full md:grid-cols-2 lg:grid-cols-4 h-full relative top-0 z-2"
+        >
+          <div class="h-full w-full border-r border-l border-[#D9D8D8]"></div>
+          <div
+            class="h-full w-full border-r border-l md:border-l-0 border-[#D9D8D8]"
+          ></div>
+          <div
+            class="h-full w-full border-r border-l lg:border-l-0 border-[#D9D8D8]"
+          ></div>
+          <div
+            class="h-full w-full border-r border-l md:border-l-0 border-[#D9D8D8]"
+          ></div>
+        </div>
+        <div class="absolute top-0 left-[3px]">
+          <h3
+            class="top-0 text-[40px] font-bold leading-[42px] tracking-[-0.04em]"
+          >
+            Én profil.  
+            <h3
+              class="text-[#8A705A] text-[40px] font-bold leading-[42px] tracking-[-0.04em] text-left"
+            >
+              Mange muligheder.
+            </h3>
+          </h3>
+        </div>
+      </div>
+
+      <!-- Grid with image boxes and borders -->
+      <div class="w-full max-w-[1360px] mx-auto relative">
+        <div
+          class="grid grid-cols-1 w-full md:grid-cols-2 lg:grid-cols-4 h-full relative top-0 z-2 cards"
+        >
+          <div
+            class="h-full w-full border-r border-l md:border-l-0 border-b lg:border-b-0 border-[#D9D8D8] flex flex-col justify-between bg-white"
+          >
+            <div class="w-full flex-grow card">
+              <div
+                style="
+                  background-image: url('./images/profil1.png');
+                  background-position: 60%;
+                "
+                alt=""
+                class="img-container bg-no-repeat bg-cover w-full h-full min-h-[440px] img-container"
+              ></div>
+            </div>
+            <p
+              class="pl-[16px] text-left font-normal text-[14px] leading-[19px] text-[#777777] h-[50px] flex items-center justify-start"
+            >
+              DEKO Tré, 4 panels
+            </p>
+          </div>
+          <div
+            class="h-full w-full border-r border-l md:border-l-0 border-b lg:border-b-0 border-[#D9D8D8] flex flex-col justify-between bg-white"
+          >
+            <div class="w-full flex-grow card">
+              <div
+                style="
+                  background-image: url('./images/profil2.png');
+                  background-position: 60%;
+                "
+                alt=""
+                class="img-container bg-no-repeat bg-cover w-full h-full min-h-[440px] img-container"
+              ></div>
+            </div>
+            <p
+              class="pl-[16px] text-left font-normal text-[14px] leading-[19px] text-[#777777] h-[50px] flex items-center justify-start"
+            >
+              DEKO Tré, 4 panels with door
+            </p>
+          </div>
+          <div
+            class="h-full w-full border-r border-l md:border-l-0 border-b lg:border-b-0 border-[#D9D8D8] flex flex-col justify-between bg-white"
+          >
+            <div class="w-full flex-grow card">
+              <div
+                style="
+                  background-image: url('./images/profil3.png');
+                  background-position: 60%;
+                "
+                alt=""
+                class="img-container bg-no-repeat bg-cover w-full h-full min-h-[440px] img-container"
+              ></div>
+            </div>
+            <p
+              class="pl-[16px] text-left font-normal text-[14px] leading-[19px] text-[#777777] h-[50px] flex items-center justify-start"
+            >
+              DEKO Tré, 4 panels, double doors
+            </p>
+          </div>
+          <div
+            class="h-full w-full border-r border-l md:border-l-0 border-b lg:border-b-0 border-[#D9D8D8] flex flex-col justify-between bg-white"
+          >
+            <div class="w-full flex-grow card">
+              <div
+                style="
+                  background-image: url('./images/profil4.png');
+                  background-position: 60%;
+                "
+                alt=""
+                class="bg-no-repeat bg-cover w-full h-full min-h-[440px] img-container"
+              ></div>
+            </div>
+            <p
+              class="pl-[16px] text-left font-normal text-[14px] leading-[19px] text-[#777777] h-[50px] flex items-center justify-start"
+            >
+              DEKO Tré, 4 panels, special
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- grid between sections -->
+    <section class="bg-[#F6F6F6] w-full px-[20px] md:px-[40px]">
+      <div class="h-[100px] max-w-[1360px] w-full mx-auto relative">
+        <div
+          class="grid grid-cols-1 w-full md:grid-cols-2 lg:grid-cols-4 h-full absolute top-0 z-2"
+        >
+          <div class="h-full w-full border-r border-l border-[#D9D8D8]"></div>
+          <div
+            class="h-full w-full border-r border-l md:border-l-0 border-[#D9D8D8]"
+          ></div>
+          <div
+            class="h-full w-full border-r border-l lg:border-l-0 border-[#D9D8D8]"
+          ></div>
+          <div
+            class="h-full w-full border-r border-l md:border-l-0 border-[#D9D8D8]"
+          ></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- I Klemme-->
+    <section class="px-[20px] md:px-[40px] bg-[#F6F6F6]">
+      <div class="max-w-[1360px] mx-auto w-full relative">
+        <div class="grid grid-cols-1 md:grid-cols-2 h-full relative">
+          <div
+            class="bg-[#FFFFFF] h-full w-full border-r border-l border-[#D9D8D8]"
+          >
+            <div
+              class="min-h-[543px] flex flex-col justify-between py-[104px] ml-[2px] content-klemme"
+            >
+              <h1
+                class="font-bold text-[60px] leading-[60px] tracking-[-0.04em] text-container"
+              >
+                <span class="text-animation">
+                  <span> I klemme. </span>
+                </span>
+              </h1>
+              <p
+                class="text-[18px] leading-[24px] tracking-[-0.01em] font-normal pl-[2px] max-w-[336px]"
+              >
+                Tré har ingen af de typiske glaslister. Derimod
+                klemmer profilerne direkte om glasset og gør det dermed til et
+                af de bærende elementer. 
+              </p>
+            </div>
+          </div>
+          <div
+            class="h-full w-full border-r border-l md:border-l-0 border-[#D9D8D8]"
+          >
+            <img
+              src="./images/klemme.svg"
+              alt=""
+              class="h-full bg-[#8a6f55] max-h-[543px] img-container3"
+              style="object-fit: cover"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Én profil. Mange muligheder. -->
+    <section class="px-[20px] md:px-[40px] bg-[#F6F6F6]">
+      <!-- Header section -->
+      <div class="h-[261px] w-full max-w-[1360px] mx-auto relative">
+        <div
+          class="grid grid-cols-1 w-full md:grid-cols-2 lg:grid-cols-4 h-full relative top-0 z-2"
+        >
+          <div class="h-full w-full border-r border-l border-[#D9D8D8]"></div>
+          <div
+            class="h-full w-full border-r border-l md:border-l-0 border-[#D9D8D8]"
+          ></div>
+          <div
+            class="h-full w-full border-r border-l lg:border-l-0 border-[#D9D8D8]"
+          ></div>
+          <div
+            class="h-full w-full border-r border-l md:border-l-0 border-[#D9D8D8]"
+          ></div>
+        </div>
+        <div class="absolute top-[127px] left-[3px]">
+          <h3
+            class="sm:min-w-[357px] top-0 text-[31px] sm:text-[40px] font-bold leading-[42px] tracking-[-0.04em]"
+          >
+            Materialet er naturens.
+            <h3
+              class="text-[#8A705A] sm:min-w-[357px] text-[31px] sm:text-[40px] font-bold leading-[42px] tracking-[-0.04em] text-left"
+            >
+              Valget er dit.
+            </h3>
+          </h3>
+        </div>
+      </div>
+      <!-- Grid with image boxes and borders -->
+      <div class="w-full max-w-[1360px] mx-auto relative">
+        <div
+          class="grid grid-cols-1 w-full md:grid-cols-2 lg:grid-cols-4 h-full relative top-0 z-2 cards"
+        >
+          <div
+            class="h-full w-full border-r border-l md:border-l-0 border-b lg:border-b-0 border-[#D9D8D8] flex flex-col justify-between bg-white"
+          >
+            <div class="w-full flex-grow card">
+              <div
+                style="
+                  background-image: url('./images/fyr.png');
+                  background-position: 55%;
+                "
+                alt=""
+                class="img-container bg-no-repeat bg-cover w-full md:min-h-[280px] min-h-[350px]"
+              ></div>
+            </div>
+            <div class="pt-[33px] pl-[24px] pb-[30px] pr-[38px]">
+              <h4
+                class="font-bold leading-[30px] tracking-[-0.04em] text-[24px]"
+              >
+                Fyr
+              </h4>
+              <p class="font-normal text-[16px] leading-[21px] pt-[24px]">
+                Det er bæredygtigt, det vokser hurtigt, og så er det billigt.
+              </p>
+            </div>
+          </div>
+          <div
+            class="h-full w-full border-r border-l md:border-l-0 border-b lg:border-b-0 border-[#D9D8D8] flex flex-col justify-between bg-white"
+          >
+            <div class="w-full flex-grow card">
+              <div
+                style="
+                  background-image: url('./images/eg.png');
+                  background-position: 55%;
+                "
+                alt=""
+                class="img-container bg-no-repeat bg-cover w-full md:min-h-[280px] min-h-[350px]"
+              ></div>
+            </div>
+            <div class="pt-[33px] pl-[24px] pb-[30px] pr-[38px]">
+              <h4
+                class="font-bold leading-[30px] tracking-[-0.04em] text-[24px]"
+              >
+                Eg
+              </h4>
+              <p
+                class="text-left font-normal text-[16px] leading-[21px] pt-[24px]"
+              >
+                Egetræ. Man kan næsten høre, hvor gedigent det er.
+              </p>
+            </div>
+          </div>
+          <div
+            class="h-full w-full border-r border-l md:border-l-0 border-b lg:border-b-0 border-[#D9D8D8] flex flex-col justify-between bg-white"
+          >
+            <div class="w-full flex-grow card">
+              <div
+                style="
+                  background-image: url('./images/ask.png');
+                  background-position: 55%;
+                "
+                alt=""
+                class="img-container bg-no-repeat bg-cover w-full md:min-h-[280px] min-h-[350px]"
+              ></div>
+            </div>
+            <div class="pt-[33px] pl-[24px] pb-[30px] pr-[38px]">
+              <h4
+                class="font-bold leading-[30px] tracking-[-0.04em] text-[24px]"
+              >
+                Ask
+              </h4>
+              <p
+                class="text-left font-normal text-[16px] leading-[21px] pt-[24px]"
+              >
+                Ask er stærkt. Måske er det derfor, at det latinske navn betyder
+                vikingeskib.
+              </p>
+            </div>
+          </div>
+          <div
+            class="h-full w-full border-r border-l md:border-l-0 border-b lg:border-b-0 border-[#D9D8D8] flex flex-col justify-between bg-white"
+          >
+            <div class="w-full flex-grow card">
+              <div
+                style="
+                  background-image: url('./images/sortbejdset.png');
+                  background-position: 55%;
+                "
+                alt=""
+                class="img-container bg-no-repeat bg-cover w-full md:min-h-[280px] min-h-[350px]"
+              ></div>
+            </div>
+            <div class="pt-[33px] pl-[24px] pb-[30px] pr-[38px]">
+              <h4
+                class="font-bold leading-[30px] tracking-[-0.04em] text-[24px]"
+              >
+                Sortbejdset
+              </h4>
+              <p
+                class="text-left font-normal text-[16px] leading-[21px] pt-[24px]"
+              >
+                Det mest bæredygtige træ er det, der allerede er fældet.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="px-[20px] md:px-[40px] bg-[#F6F6F6]">
+      <!-- Header section -->
+      <div class="h-[80px] w-full max-w-[1360px] mx-auto relative">
+        <div
+          class="grid grid-cols-1 w-full md:grid-cols-2 lg:grid-cols-4 h-full relative top-0 z-2"
+        >
+          <div class="h-full w-full border-r border-l border-[#D9D8D8]"></div>
+          <div
+            class="h-full w-full border-r border-l md:border-l-0 border-[#D9D8D8]"
+          ></div>
+          <div
+            class="h-full w-full border-r border-l lg:border-l-0 border-[#D9D8D8]"
+          ></div>
+          <div
+            class="h-full w-full border-r border-l md:border-l-0 border-[#D9D8D8]"
+          ></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Black section -->
+    <section class="bg-[#111111] w-full h-full">
+      <div class="w-full max-w-[1440px] mx-auto">
+        <div class="flex lg:flex-row flex-col gap-[4px] justify-between">
+          <div
+            class="max-w-[451px] w-full pl-[20px] sm:pl-[39px] pt-[35px] flex flex-col gap-[125px]"
+          >
+            <h1
+              class="text-[60px] leading-[60px] tracking-[-0.04em] font-bold text-[#F6F6F6]"
+            >
+              1000 grader i 60 minutter.
+            </h1>
+            <p class="text-[22px] leading-[30px] font-normal text-[#F6F6F6]">
+              Profilerne klarede brandtesten til punkt og prikke og har fået
+              mærkningen EI 30/60.
+            </p>
+          </div>
+          <div
+            class="pt-[140px] lg:pt-[280px] lg:pl-0 sm:pl-[43px] px-[20px] sm:pr-[43px]"
+          >
+            <img
+              src="./images/black-box-image.png"
+              alt=""
+              class="black-box-image w-[904px] lg:h-[561px] img-container3"
+              style="object-fit: cover"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hvis du kan tænke det, kan vi levere det.  -->
+    <section class="px-[20px] md:px-[40px] bg-[#F6F6F6]">
+      <!-- Header section -->
+      <div class="h-[211px] w-full max-w-[1360px] mx-auto relative">
+        <div
+          class="grid grid-cols-1 w-full md:grid-cols-2 lg:grid-cols-4 h-full relative top-0 z-2"
+        >
+          <div class="h-full w-full border-r border-l border-[#D9D8D8]"></div>
+          <div
+            class="h-full w-full border-r border-l md:border-l-0 border-[#D9D8D8]"
+          ></div>
+          <div
+            class="h-full w-full border-r border-l lg:border-l-0 border-[#D9D8D8]"
+          ></div>
+          <div
+            class="h-full w-full border-r border-l md:border-l-0 border-[#D9D8D8]"
+          ></div>
+        </div>
+        <div class="absolute left-[3px] bottom-[26px]">
+          <h3
+            class="sm:min-w-[357px] top-0 text-[31px] sm:text-[40px] font-bold leading-[42px] tracking-[-0.04em]"
+          >
+            Hvis du kan tænke det, 
+            <h3
+              class="text-[#8A705A] sm:min-w-[357px] text-[31px] sm:text-[40px] font-bold leading-[42px] tracking-[-0.04em] text-left"
+            >
+              kan vi levere det. 
+            </h3>
+          </h3>
+        </div>
+      </div>
+
+      <!-- Content -->
+      <div class="bg-[#eaeaea] w-full max-w-[1360px] mx-auto">
+        <!-- > lg -->
+        <div class="flex w-full">
+          <div class="w-full lg:w-[865px] relative h-[723.06px]">
+            <img
+              src="./images/tre-elements.png"
+              alt=""
+              class="relative w-full h-[723.06px] sm:ml-[-50px] lg:ml-[0px]"
+              style="object-fit: cover"
+            />
+            <button
+              class="md:h-[36.85px] md:w-[36.85px] h-[30.85px] w-[30.85px] bg-[#111111] text-white rounded-full text-[16px] leading-[16px] text-center font-medium absolute top-[45%] md:left-[32.5%] sm:left-[22.5%] left-[22.5%] left-[10%] position-dot1 button point"
+              id="btn1"
+            >
+              1
+            </button>
+            <button
+              class="md:h-[36.85px] md:w-[36.85px] h-[30.85px] w-[30.85px] bg-[#111111] text-white rounded-full text-[16px] leading-[16px] text-center font-medium absolute top-[28%] md:left-[59.5%] sm:left-[54.5%] left-[68.5%] button point"
+              id="btn2"
+            >
+              2
+            </button>
+            <button
+              class="md:h-[36.85px] md:w-[36.85px] h-[30.85px] w-[30.85px] bg-[#111111] text-white rounded-full text-[16px] leading-[16px] text-center font-medium absolute top-[70%] md:left-[68.5%] sm:left-[66.5%] left-[84.5%] button point point3"
+              id="btn3"
+            >
+              3
+            </button>
+          </div>
+          <!-- Tablet & Mobile -->
+          <div
+            class="block lg:hidden text-content mt-[110px] lg:mt-[173.05px] ml-[20px] absolute right-0 w-full"
+          >
+            <div
+              class="max-w-[302px] w-full content-mobile flex flex-col mb-[40px] content hidden rounded-lg bg-white/50 lg:bg-transparent z-40"
+              id="content-mobile1"
+            >
+              <h5
+                class="tracking-[-0.02em] text-[12px] sm:text-[16px] leading-[16px] font-bold pb-[10px]"
+              >
+                1. Tynde træprofiler
+              </h5>
+              <p class="text-[12px] sm:text-[16px] font-normal leading-[21px]">
+                Du bestemmer dimensionerne. Træsorten. Finishen. Grebet på
+                døren. Tykkelsen på glasset. Og så videre.
+              </p>
+            </div>
+            <div
+              class="max-w-[302px] w-full content-mobile flex flex-col mt-[150px] lg:mt-[100px] content hidden rounded-lg bg-white/50 lg:bg-transparent z-40"
+              id="content-mobile2"
+            >
+              <h5
+                class="tracking-[-0.02em] text-[12px] sm:text-[16px] leading-[16px] font-bold pb-[10px]"
+              >
+                2. Usynlige samlinger
+              </h5>
+              <p class="text-[12px] sm:text-[16px] font-normal leading-[21px]">
+                Du bestemmer dimensionerne. Træsorten. Finishen. Grebet på
+                døren. Tykkelsen på glasset. Og så videre.
+              </p>
+            </div>
+            <div
+              class="max-w-[302px] w-full content-mobile flex flex-col mt-[250px] lg:mt-[180px] content hidden rounded-lg bg-white/50 lg:bg-transparent"
+              id="content-mobile3"
+            >
+              <h5
+                class="tracking-[-0.02em] text-[12px] sm:text-[16px] leading-[16px] font-bold pb-[10px]"
+              >
+                3. Brandsikkert certifikat
+              </h5>
+              <p class="text-[12px] sm:text-[16px] font-normal leading-[21px]">
+                Du bestemmer dimensionerne. Træsorten. Finishen. Grebet på
+                døren. Tykkelsen på glasset. Og så videre.
+              </p>
+            </div>
+          </div>
+          <div
+            class="lg:w-[503px] lg:min-h-full bg-[#eaeaea] lg:relative absolute"
+          >
+            <div
+              class="flex items-start justify-start lg:items-end lg:justify-end ml-[20px] sm:ml-[48px] mt-[20px] sm:mt-[50px]"
+            >
+              <img
+                src="./images/tre-logo.svg"
+                alt=""
+                class="h-[87.18px] w-[120px] sm:w-[165.49px] lg:mr-[48.43px] lg:mt-[50.77px]"
+              />
+            </div>
+            <!-- Desktop -->
+            <div
+              class="lg:block hidden text-content mt-[82px] lg:mt-[173.05px] ml-[20px]"
+            >
+              <div
+                class="max-w-[302px] w-full content flex flex-col mb-[40px] hidden rounded-lg bg-white/50 lg:bg-transparent"
+                id="content1"
+              >
+                <h5
+                  class="tracking-[-0.02em] text-[16px] leading-[16px] font-bold pb-[10px]"
+                >
+                  1. Tynde træprofiler
+                </h5>
+                <p class="text-[16px] font-normal leading-[21px]">
+                  Du bestemmer dimensionerne. Træsorten. Finishen. Grebet på
+                  døren. Tykkelsen på glasset. Og så videre.
+                </p>
+              </div>
+              <div
+                class="max-w-[302px] w-full content flex flex-col mt-[150px] lg:mt-[100px] hidden rounded-lg bg-white/50 lg:bg-transparent"
+                id="content2"
+              >
+                <h5
+                  class="tracking-[-0.02em] text-[16px] leading-[16px] font-bold pb-[10px]"
+                >
+                  2. Usynlige samlinger
+                </h5>
+                <p class="text-[16px] font-normal leading-[21px]">
+                  Du bestemmer dimensionerne. Træsorten. Finishen. Grebet på
+                  døren. Tykkelsen på glasset. Og så videre.
+                </p>
+              </div>
+              <div
+                class="max-w-[302px] w-full content flex flex-col mt-[200px] lg:mt-[180px] hidden rounded-lg bg-white/50 lg:bg-transparent"
+                id="content3"
+              >
+                <h5
+                  class="tracking-[-0.02em] text-[16px] leading-[16px] font-bold pb-[10px]"
+                >
+                  3. Brandsikkert certifikat
+                </h5>
+                <p class="text-[16px] font-normal leading-[21px]">
+                  Du bestemmer dimensionerne. Træsorten. Finishen. Grebet på
+                  døren. Tykkelsen på glasset. Og så videre.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certificeringer. -->
+    <section class="px-[20px] md:px-[40px] bg-[#F6F6F6]">
+      <!-- Header section -->
+      <div class="h-[228.94px] w-full max-w-[1360px] mx-auto relative">
+        <div
+          class="grid grid-cols-1 w-full md:grid-cols-2 lg:grid-cols-4 h-full relative top-0 z-2"
+        >
+          <div class="h-full w-full border-r border-l border-[#D9D8D8]"></div>
+          <div
+            class="h-full w-full border-r border-l md:border-l-0 border-[#D9D8D8]"
+          ></div>
+          <div
+            class="h-full w-full border-r border-l lg:border-l-0 border-[#D9D8D8]"
+          ></div>
+          <div
+            class="h-full w-full border-r border-l md:border-l-0 border-[#D9D8D8]"
+          ></div>
+        </div>
+        <div class="absolute left-[3px] bottom-[53px]">
+          <h3
+            class="top-0 text-[31px] sm:text-[40px] font-bold leading-[42px] tracking-[-0.04em]"
+          >
+            Certificeringer.
+          </h3>
+        </div>
+      </div>
+
+      <!-- Grid with image boxes and borders -->
+      <div class="w-full max-w-[1360px] mx-auto relative bg-[#F6F6F6]">
+        <div
+          class="grid grid-cols-1 w-full md:grid-cols-2 lg:grid-cols-4 h-full relative top-0 z-2"
+        >
+          <div
+            class="min-h-[401px] w-full border-r border-l border-[#D9D8D8] flex flex-col text-center justify-between"
+          >
+            <div class="pt-[34px] pl-[24px] pr-[23px]">
+              <div
+                class="px-[26px] w-full h-[1px] bg-[#000000] mx-auto mb-[35px]"
+              ></div>
+              <h5
+                class="font-bold leading-[16px] tracking-[-0.02em] text-[16px]"
+              >
+                Brandsikker
+              </h5>
+            </div>
+            <h3
+              class="font-bold text-[40px] leading-[42px] tracking-[-0.04em] pl-[26px] pr-[23px]"
+            >
+              EI 30/60
+            </h3>
+            <div class="pl-[24px] pr-[23px]">
+              <p
+                class="font-normal text-[16px] leading-[21px] h-[56px] flex items-center justify-center"
+              >
+                Standard på danske kontorer
+              </p>
+              <div
+                class="px-[26px] w-full h-[1px] bg-[#000000] mx-auto my-[38px] lg:block hidden"
+              ></div>
+            </div>
+          </div>
+          <div
+            class="min-h-[401px] w-full border-r border-l border-[#D9D8D8] flex flex-col text-center justify-between"
+          >
+            <div class="pt-[34px] pl-[24px] pr-[23px]">
+              <div
+                class="px-[26px] w-full h-[1px] bg-[#000000] mx-auto mb-[35px]"
+              ></div>
+              <h5
+                class="font-bold leading-[16px] tracking-[-0.02em] text-[16px]"
+              >
+                Røgsikker
+              </h5>
+            </div>
+            <h3
+              class="font-bold text-[40px] leading-[42px] tracking-[-0.04em] pl-[26px] pr-[23px]"
+            >
+              Sa S200, M27 x M11
+            </h3>
+            <div class="pl-[24px] pr-[23px]">
+              <p
+                class="font-normal text-[16px] leading-[21px] h-[56px] flex items-center justify-center"
+              >
+                Lige så vigtigt som brandsikkerhed
+              </p>
+              <div
+                class="px-[26px] w-full h-[1px] bg-[#000000] mx-auto my-[38px] lg:block hidden"
+              ></div>
+            </div>
+          </div>
+          <div
+            class="min-h-[401px] w-full border-r border-l border-[#D9D8D8] flex flex-col text-center justify-between"
+          >
+            <div class="pt-[34px] pl-[24px] pr-[23px]">
+              <div
+                class="px-[26px] w-full h-[1px] bg-[#000000] mx-auto mb-[35px]"
+              ></div>
+              <h5
+                class="font-bold leading-[16px] tracking-[-0.02em] text-[16px]"
+              >
+                Lydtæt
+              </h5>
+            </div>
+            <h3
+              class="font-bold text-[40px] leading-[42px] tracking-[-0.04em] pl-[26px] pr-[23px]"
+            >
+              RW dB XX
+            </h3>
+            <div class="pl-[24px] pr-[23px]">
+              <p
+                class="font-normal text-[16px] leading-[21px] h-[56px] flex items-center justify-center"
+              >
+                Uforstyrrede møder
+              </p>
+              <div
+                class="px-[26px] w-full h-[1px] bg-[#000000] mx-auto my-[38px] md:block hidden"
+              ></div>
+            </div>
+          </div>
+          <div
+            class="min-h-[401px] w-full border-r border-l border-[#D9D8D8] flex flex-col text-center justify-between"
+          >
+            <div class="pt-[34px] pl-[24px] pr-[23px]">
+              <div
+                class="px-[26px] w-full h-[1px] bg-[#000000] mx-auto mb-[35px]"
+              ></div>
+              <h5
+                class="font-bold leading-[16px] tracking-[-0.02em] text-[16px]"
+              >
+                Bæredygtig
+              </h5>
+            </div>
+            <h3
+              class="font-bold text-[40px] leading-[42px] tracking-[-0.04em] pl-[26px] pr-[23px]"
+            >
+              Recycling
+            </h3>
+            <div class="pl-[24px] pr-[23px]">
+              <p
+                class="font-normal text-[16px] leading-[21px] h-[56px] flex items-center justify-center"
+              >
+                Kan leveres i affaldstræ/frasorteret træ.
+              </p>
+              <div
+                class="px-[26px] w-full h-[1px] bg-[#000000] mx-auto my-[38px]"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mindre lyd. Mere lys. -->
+    <div class="bg-[#F6F6F6] w-full px-[20px] md:px-[40px]">
+      <!-- Header section -->
+      <div class="h-[92px] w-full max-w-[1360px] mx-auto relative">
+        <div
+          class="grid grid-cols-1 w-full md:grid-cols-2 lg:grid-cols-4 h-full relative top-0 z-2"
+        >
+          <div class="h-full w-full border-r border-l border-[#D9D8D8]"></div>
+          <div
+            class="h-full w-full border-r border-l md:border-l-0 border-[#D9D8D8]"
+          ></div>
+          <div
+            class="h-full w-full border-r border-l lg:border-l-0 border-[#D9D8D8]"
+          ></div>
+          <div
+            class="h-full w-full border-r border-l md:border-l-0 border-[#D9D8D8]"
+          ></div>
+        </div>
+      </div>
+
+      <!-- Content -->
+      <section
+        class="md:h-[800px] h-[800px] lg:h-[708px] max-w-[1360px] w-full mx-auto relative"
+      >
+        <!-- Grid section with transparent overlay and non-visible borders -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 h-full relative z-10"
+        >
+          <div
+            class="min-h-full h-full w-full border-transparent border-r md:border-r-0 border-l"
+          ></div>
+          <div class="h-full w-full border-r border-transparent border-l"></div>
+          <div
+            class="border-l lg:border-l-0 border-r h-full w-full border-transparent bg-transparent lg:bg-[#F6F6F6] lg:bg-opacity-[0.3]"
+          ></div>
+          <div
+            class="border-r border-l border-transparent md:border-l-0 h-full w-full"
+          ></div>
+        </div>
+
+        <!-- Grid section with borders. Should be used when content is needed inside the columns -->
+        <div
+          class="grid grid-cols-1 w-full md:grid-cols-2 lg:grid-cols-4 h-[800px] absolute top-0 z-2"
+        >
+          <div class="h-full w-full border-r border-l border-[#D9D8D8]"></div>
+          <div
+            class="h-full w-full border-r border-l md:border-l-0 border-[#D9D8D8]"
+          ></div>
+          <div
+            class="h-full w-full border-r border-l lg:border-l-0 border-[#D9D8D8]"
+          ></div>
+          <div
+            class="h-full w-full border-r border-l md:border-l-0 border-[#D9D8D8]"
+          ></div>
+        </div>
+        <!-- 4 Col -->
+        <div class="flex">
+          <div
+            class="absolute top-[100px] lg:w-[50%] w-full h-[424px] lg:h-full"
+          >
+            <img
+              src="./images/mere-lys.png"
+              alt=""
+              class="h-[100%] w-full img-container3"
+              style="object-fit: cover"
+            />
+          </div>
+          <div
+            class="top-0 lg:top-[150px] xl:pl-[445px] lg:pl-[200px] pl-[20px] flex items-center gap-[70px] xl:gap-[100px] absolute lg:w-[50%] w-full"
+          >
+            <h1
+              class="text-container text-[#171B17] font-bold lg:text-[110px] text-[60px] leading-[72px] lg:leading-[110px] tracking-[-0.04em]"
+            >
+              <span class="text-animation">
+                <span> Mindre </span>
+              </span>
+              lyd.
+            </h1>
+            <h1
+              class="text-container lg:block hidden text-[#8A705A] font-bold lg:text-[110px] text-[60px] leading-[72px] lg:leading-[110px] tracking-[-0.04em]"
+            >
+              Mere
+              <span class="text-animation">
+                <span>lys. </span>
+              </span>
+            </h1>
+          </div>
+          <h1
+            class="block lg:hidden text-[#8A705A] font-bold lg:text-[110px] text-[60px] leading-[72px] lg:leading-[110px] tracking-[-0.04em] absolute bottom-[11rem] sm:bottom-[10rem] md:bottom-[10rem] left-[20px]"
+          >
+            Mere lys.
+          </h1>
+          <!-- > Lg -->
+          <p
+            class="lg:block hidden text-[#2A2A2A] text-[22px] leading-[30px] font-normal absolute top-[500px] pl-[660px] xl:pl-[790px] pr-[20px] xl:pr-[92px]"
+          >
+            Tré er lydisoleret, og produktet har modtaget mærkningen (lorem
+            ipsum dolor sit amet). Eller for at gøre det lidt mere konkret: Hvad
+            der bliver sagt i mødet, bliver i mødet.
+          </p>
+          <!--  < lg -->
+          <p
+            class="block lg:hidden text-[#2A2A2A] text-[18px] lg:text-[22px] leading-[30px] font-normal absolute bottom-[0.9rem] sm:bottom-[1.9rem] md:bottom-[5rem] left-[20px] pr-[20px]"
+          >
+            Tré er lydisoleret, og produktet har modtaget mærkningen (lorem
+            ipsum dolor sit amet). Eller for at gøre det lidt mere konkret: Hvad
+            der bliver sagt i mødet, bliver i mødet.
+          </p>
+        </div>
+      </section>
+
+      <!-- Gap B/W section -->
+      <div class="bg-[#F6F6F6] w-full">
+        <div
+          class="h-[105px] w-full max-w-[1360px] mx-auto relative bg-[#F6F6F6]"
+        >
+          <div
+            class="grid grid-cols-1 w-full md:grid-cols-2 lg:grid-cols-4 h-full relative top-0 z-2"
+          >
+            <div class="h-full w-full border-r border-l border-[#D9D8D8]"></div>
+            <div
+              class="h-full w-full border-r border-l md:border-l-0 border-[#D9D8D8]"
+            ></div>
+            <div
+              class="h-full w-full border-r border-l lg:border-l-0 border-[#D9D8D8]"
+            ></div>
+            <div
+              class="h-full w-full border-r border-l md:border-l-0 border-[#D9D8D8]"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Nyhedsbrev. -->
+    <div class="bg-[#F6F6F6] w-full">
+      <section class="px-[20px] md:px-[40px] w-full bg-[#F6F6F6]">
+        <div class="max-w-[1360px] mx-auto w-full relative">
+          <div class="grid grid-cols-1 md:grid-cols-2 h-full relative">
+            <div
+              class="bg-[#FFFFFF] h-full w-full border-r border-l border-[#D9D8D8] flex items-center justify-center text-center flex-col min-h-[575px]"
+            >
+              <!-- <div class="min-h-[543px] flex flex-col justify-between py-[104px] ml-[2px] content-klemme"> -->
+              <h3
+                class="font-bold text-[40px] leading-[42px] tracking-[-0.04em] text-[#111111] pb-[33px]"
+              >
+                Nyhedsbrev.
+              </h3>
+              <p
+                class="text-[22px] leading-[30px] font-normal w-full mx-auto max-w-[474px] px-[10px]"
+              >
+                Få nyheder om Tré og vores andre profiler. Vi sender 1-2 emails
+                om måneden.
+              </p>
+              <!-- </div> -->
+            </div>
+            <div
+              class="min-h-[575px] w-full border-r border-l md:border-l-0 border-[#D9D8D8] bg-[#EAEAEA] pl-[20px] sm:pl-[38px] md:pl-[74px] lg:pl-[114px] pt-[100px] md:pt-[173px]"
+            >
+              <div class="flex flex-col">
+                <input
+                  type="text"
+                  placeholder="Indtast email"
+                  class="email-input bg-transparent sm:w-[75%] w-[90%]"
+                />
+                <div class="flex items-center gap-[23px] mt-[45px]">
+                  <input
+                    type="checkbox"
+                    class="border-[#E2E2E2] border bg-[#F6F6F6] h-[24px] w-[24px]"
+                  />
+                  <p
+                    class="text-[#111111] text-[14px] leading-[19px] font-normal"
+                  >
+                    Accepter databetingelser
+                  </p>
+                </div>
+                <div class="flex items-center gap-[23px] mt-[18px]">
+                  <input
+                    type="checkbox"
+                    class="border-[#E2E2E2] border bg-[#F6F6F6] h-[24px] w-[24px]"
+                  />
+                  <p
+                    class="text-[#111111] text-[14px] leading-[19px] font-normal"
+                  >
+                    Accepter marketing emails (valgfri)
+                  </p>
+                </div>
+                <button
+                  class="bg-[#111111] w-[195px] h-[48px] font-bold text-[15px] leading-[21px] text-center text-white mt-[86px]"
+                >
+                  Send
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="grid grid-cols-1 w-full md:grid-cols-2 lg:grid-cols-4 h-[80px] z-2"
+          >
+            <div class="h-full w-full border-r border-l border-[#D9D8D8]"></div>
+            <div
+              class="h-full w-full border-r border-l md:border-l-0 border-[#D9D8D8]"
+            ></div>
+            <div
+              class="h-full w-full border-r border-l lg:border-l-0 border-[#D9D8D8]"
+            ></div>
+            <div
+              class="h-full w-full border-r border-l md:border-l-0 border-[#D9D8D8]"
+            ></div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Valgfriheden sætter de andre til vægs -->
+    <section class="w-full max-w-[1441px] mx-auto px-[20px] sm:px-[45px] py-2">
+      <div
+        class="flex lg:flex-row flex-col py-5 pb-[111px] justify-between gap-4"
+      >
+        <div class="flex-1">
+          <h2
+            class="lg:max-w-[483px] font-bold text-[50px] leading-[48px] tracking-[-0.04em]"
+          >
+            Valgfriheden sætter de andre til vægs.
+          </h2>
+        </div>
+        <div class="flex-1">
+          <p
+            class="lg:max-w-[672px] text-[22px] leading-[30px] font-normal mt-2"
+          >
+            Dørene er designet på en intelligent måde, som giver dig stor
+            valgfrihed mellem div. låse og håndtag m.m.
+          </p>
+        </div>
+      </div>
+
+      <!-- EI30 -->
+      <div class="slider pb-[94px]">
+        <h4
+          class="font-bold text-[24px] pb-[16px] leading-[30px] pl-[2px] tracking-[-0.04em]"
+        >
+          EI30
+        </h4>
+        <div class="m-slider swiper-container">
+          <div class="swiper-wrapper">
+            <div
+              class="m-slider__item swiper-slide min-w-[336px] min-h-[386px]"
+            >
+              <div class="m-card" ontouchstart>
+                <div
+                  class="w-full min-w-[336px] min-h-[386px] bg-[#F6F6F6] p-5 flex items-center justify-center"
+                >
+                  <img
+                    src="./images/image 281.svg"
+                    alt="image"
+                    class=""
+                    loading="lazy"
+                  />
+                </div>
+                <p
+                  class="text-sm font-normal mt-[9px] ml-0.5 text-left leading-[19px]"
+                >
+                  Enkeltdør m. sprosser
+                </p>
+              </div>
+            </div>
+            <div
+              class="m-slider__item swiper-slide min-w-[336px] min-h-[386px]"
+            >
+              <div class="m-card" ontouchstart>
+                <div
+                  class="w-full min-w-[336px] min-h-[386px] bg-[#F6F6F6] p-5 flex items-center justify-center"
+                >
+                  <img
+                    src="./images/image 282.svg"
+                    alt="image"
+                    class=""
+                    loading="lazy"
+                  />
+                </div>
+                <p
+                  class="text-sm font-normal mt-[9px] ml-0.5 text-left leading-[19px]"
+                >
+                  Dobbeltdør m. overblok
+                </p>
+              </div>
+            </div>
+            <div
+              class="m-slider__item swiper-slide min-w-[336px] min-h-[386px]"
+            >
+              <div class="m-card" ontouchstart>
+                <div
+                  class="w-full min-w-[336px] min-h-[386px] bg-[#F6F6F6] p-5 flex items-center justify-center"
+                >
+                  <img
+                    src="./images/image 283.svg"
+                    alt="image"
+                    class=""
+                    loading="lazy"
+                  />
+                </div>
+                <p
+                  class="text-sm font-normal mt-[9px] ml-0.5 text-left leading-[19px]"
+                >
+                  Dobbeltdør m. sprosser
+                </p>
+              </div>
+            </div>
+            <div
+              class="m-slider__item swiper-slide min-w-[336px] min-h-[386px]"
+            >
+              <div class="m-card" ontouchstart>
+                <div
+                  class="w-full min-w-[336px] min-h-[386px] bg-[#F6F6F6] p-5 flex items-center justify-center"
+                >
+                  <img
+                    src="./images/image 280.svg"
+                    alt="image"
+                    class=""
+                    loading="lazy"
+                  />
+                </div>
+                <p
+                  class="text-sm font-normal mt-[9px] ml-0.5 text-left leading-[19px]"
+                >
+                  Enkeltdør m. sprosser
+                </p>
+              </div>
+            </div>
+            <div
+              class="m-slider__item swiper-slide min-w-[336px] min-h-[386px]"
+            >
+              <div class="m-card" ontouchstart>
+                <div
+                  class="w-full min-w-[336px] min-h-[386px] bg-[#F6F6F6] p-5 flex items-center justify-center"
+                >
+                  <img
+                    src="./images/image 280.svg"
+                    alt="image"
+                    class=""
+                    loading="lazy"
+                  />
+                </div>
+                <p
+                  class="text-sm font-normal mt-[9px] ml-0.5 text-left leading-[19px]"
+                >
+                  Enkeltdør m. sprosser
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- EI60 -->
+      <div class="slider pb-[94px]">
+        <h4
+          class="font-bold text-[24px] pb-[16px] leading-[30px] pl-[2px] tracking-[-0.04em]"
+        >
+          EI60
+        </h4>
+        <div class="m-slider swiper-container1">
+          <div class="swiper-wrapper">
+            <div
+              class="m-slider__item swiper-slide min-w-[336px] min-h-[386px]"
+            >
+              <div class="m-card" ontouchstart>
+                <div
+                  class="w-full min-w-[336px] min-h-[386px] bg-[#F6F6F6] p-5 flex items-center justify-center"
+                >
+                  <img src="./images/image 285.png" alt="image" class="" />
+                </div>
+                <p
+                  class="text-sm font-normal mt-[9px] ml-0.5 text-left leading-[19px]"
+                >
+                  Dobbeltdør
+                </p>
+              </div>
+            </div>
+            <div
+              class="m-slider__item swiper-slide min-w-[336px] min-h-[386px]"
+            >
+              <div class="m-card" ontouchstart>
+                <div
+                  class="w-full min-w-[336px] min-h-[386px] bg-[#F6F6F6] p-5 flex items-center justify-center"
+                >
+                  <img src="./images/image 285.svg" alt="image" class="" />
+                </div>
+                <p
+                  class="text-sm font-normal mt-[9px] ml-0.5 text-left leading-[19px]"
+                >
+                  Enkeltdør m. sprosser
+                </p>
+              </div>
+            </div>
+            <div
+              class="m-slider__item swiper-slide min-w-[336px] min-h-[386px]"
+            >
+              <div class="m-card" ontouchstart>
+                <div
+                  class="w-full min-w-[336px] min-h-[386px] bg-[#F6F6F6] p-5 flex items-center justify-center"
+                >
+                  <img src="./images/image 286.svg" alt="image" class="" />
+                </div>
+                <p
+                  class="text-sm font-normal mt-[9px] ml-0.5 text-left leading-[19px]"
+                >
+                  Dobbeltdør m. overblok
+                </p>
+              </div>
+            </div>
+            <div
+              class="m-slider__item swiper-slide min-w-[336px] min-h-[386px]"
+            >
+              <div class="m-card" ontouchstart>
+                <div
+                  class="w-full min-w-[336px] min-h-[386px] bg-[#F6F6F6] p-5 flex items-center justify-center"
+                >
+                  <img src="./images/image 287.svg" alt="image" class="" />
+                </div>
+                <p
+                  class="text-sm font-normal mt-[9px] ml-0.5 text-left leading-[19px]"
+                >
+                  Dobbeltdør m. sprosser
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- EI30 GAIA glas -->
+      <div class="slider pb-[94px]">
+        <h4
+          class="font-bold text-[24px] pb-[16px] leading-[30px] pl-[2px] tracking-[-0.04em]"
+        >
+          EI30 GAIA glas
+        </h4>
+        <div class="m-slider swiper-container1">
+          <div class="swiper-wrapper">
+            <div
+              class="m-slider__item swiper-slide min-w-[336px] min-h-[386px]"
+            >
+              <div class="m-card" ontouchstart>
+                <div
+                  class="w-full min-w-[336px] min-h-[386px] bg-[#F6F6F6] p-5 flex items-center justify-center"
+                >
+                  <img src="./images/image 288.svg" alt="image" class="" />
+                </div>
+                <p
+                  class="text-sm font-normal mt-[9px] ml-0.5 text-left leading-[19px]"
+                >
+                  Dobbeltdør
+                </p>
+              </div>
+            </div>
+            <div
+              class="m-slider__item swiper-slide min-w-[336px] min-h-[386px]"
+            >
+              <div class="m-card" ontouchstart>
+                <div
+                  class="w-full min-w-[336px] min-h-[386px] bg-[#F6F6F6] p-5 flex items-center justify-center"
+                >
+                  <img src="./images/image 289.svg" alt="image" class="" />
+                </div>
+                <p
+                  class="text-sm font-normal mt-[9px] ml-0.5 text-left leading-[19px]"
+                >
+                  Dobbeltdør m. sprosser og sidevæg
+                </p>
+              </div>
+            </div>
+            <div
+              class="m-slider__item swiper-slide min-w-[336px] min-h-[386px]"
+            >
+              <div class="m-card" ontouchstart>
+                <div
+                  class="w-full min-w-[336px] min-h-[386px] bg-[#F6F6F6] p-5 flex items-center justify-center"
+                >
+                  <img src="./images/image 290.svg" alt="image" class="" />
+                </div>
+                <p
+                  class="text-sm font-normal mt-[9px] ml-0.5 text-left leading-[19px]"
+                >
+                  Dobbeltdør
+                </p>
+              </div>
+            </div>
+            <div
+              class="m-slider__item swiper-slide min-w-[336px] min-h-[386px]"
+            >
+              <div class="m-card" ontouchstart>
+                <div
+                  class="w-full min-w-[336px] min-h-[386px] bg-[#F6F6F6] p-5 flex items-center justify-center"
+                >
+                  <img src="./images/image 291.svg" alt="image" class="" />
+                </div>
+                <p
+                  class="text-sm font-normal mt-[9px] ml-0.5 text-left leading-[19px]"
+                >
+                  Dobbeltdør
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- EI60 GAIA glas -->
+      <div class="slider pb-[94px]">
+        <h4
+          class="font-bold text-[24px] pb-[16px] leading-[30px] pl-[2px] tracking-[-0.04em]"
+        >
+          EI60 GAIA glas
+        </h4>
+        <div class="m-slider swiper-container1">
+          <div class="swiper-wrapper">
+            <div
+              class="m-slider__item swiper-slide min-w-[336px] min-h-[386px]"
+            >
+              <div class="m-card" ontouchstart>
+                <div
+                  class="w-full min-w-[336px] min-h-[386px] bg-[#F6F6F6] p-5 flex items-center justify-center"
+                >
+                  <img src="./images/image 288.svg" alt="image" class="" />
+                </div>
+                <p
+                  class="text-sm font-normal mt-[9px] ml-0.5 text-left leading-[19px]"
+                >
+                  Dobbeltdør
+                </p>
+              </div>
+            </div>
+            <div
+              class="m-slider__item swiper-slide min-w-[336px] min-h-[386px]"
+            >
+              <div class="m-card" ontouchstart>
+                <div
+                  class="w-full min-w-[336px] min-h-[386px] bg-[#F6F6F6] p-5 flex items-center justify-center"
+                >
+                  <img src="./images/image 289.svg" alt="image" class="" />
+                </div>
+                <p
+                  class="text-sm font-normal mt-[9px] ml-0.5 text-left leading-[19px]"
+                >
+                  Dobbeltdør m. sprosser og sidevæg
+                </p>
+              </div>
+            </div>
+            <div
+              class="m-slider__item swiper-slide min-w-[336px] min-h-[386px]"
+            >
+              <div class="m-card" ontouchstart>
+                <div
+                  class="w-full min-w-[336px] min-h-[386px] bg-[#F6F6F6] p-5 flex items-center justify-center"
+                >
+                  <img src="./images/image 290.svg" alt="image" class="" />
+                </div>
+                <p
+                  class="text-sm font-normal mt-[9px] ml-0.5 text-left leading-[19px]"
+                >
+                  Dobbeltdør
+                </p>
+              </div>
+            </div>
+            <div
+              class="m-slider__item swiper-slide min-w-[336px] min-h-[386px]"
+            >
+              <div class="m-card" ontouchstart>
+                <div
+                  class="w-full min-w-[336px] min-h-[386px] bg-[#F6F6F6] p-5 flex items-center justify-center"
+                >
+                  <img src="./images/image 291.svg" alt="image" class="" />
+                </div>
+                <p
+                  class="text-sm font-normal mt-[9px] ml-0.5 text-left leading-[19px]"
+                >
+                  Dobbeltdør
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Besøg deko.dk -->
+    <section
+      class="ml-[20px] sm:ml-[39px] mr-[20px] sm:mr-[36px] lg:min-h-[661px]"
+    >
+      <div
+        class="mb-[86px] bg-[#EAEAEA] w-full mx-auto max-w-[1365px] min-h-[661px]"
+      >
+        <div
+          class="flex justify-between lg:justify-center h-full items-center flex-col gap-10 lg:relative w-full"
+        >
+          <div class="flex lg:hidden overflow-hidden mt-7 sm:mt-10">
+            <img
+              src="./images/besogdeko.png"
+              alt=""
+              class="h-[300px] w-full"
+              style="object-fit: cover"
+            />
+          </div>
+          <div
+            class="lg:absolute top-0 lg:top-[228px] left-[149px] w-[80%] sm:w-[340px] h-[48px] text-center z-40"
+          >
+            <h2 class="font-bold leading-[48px] tracking-[-0.04em] title-be">
+              Besøg deko.dk
+            </h2>
+            <p
+              class="text-[20px] sm:text-[22px] font-normal leading-[30px] pt-[36px]"
+            >
+              Se vores andre profiler.
+            </p>
+            <button
+              class="w-[195px] h-[48px] mt-[44px] border border-[#111111]"
+            >
+              Gå til deko.dk
+            </button>
+          </div>
+          <div class="lg:flex hidden items-end justify-end w-full">
+            <img
+              src="./images/besogdeko.png"
+              alt="Besøg deko"
+              class="h-[661px] w-[1164px]"
+              style="object-fit: cover"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer-->
+    <section class="bg-[#EAEAEA] w-full h-[511px]">
+      <div class="w-full max-w-[1360px] mx-auto">
+        <div class="pl-[20px] sm:pl-[40px] pt-[39.59px]">
+          <img
+            src="./images/FooterLogo.svg"
+            alt="Footer Logo"
+            class="w-[111px] h-[24.82px]"
+          />
+        </div>
+        <div
+          class="w-full md:w-[355px] h-[76px] mt-[120.59px] ml-0 md:pl-[267px] flex gap-8 sm:gap-[104px] justify-center md:justify-between mb-[181px]"
+        >
+          <p class="text-[14px] font-normal leading-[19px] w-[123px] h-[76px]">
+            DEKO partitions llpMaarkaervej 11 DK-2630 TaastrupDenmark
+          </p>
+          <p
+            class="text-[14px] font-normal leading-[19px] w-[128px] h-[38px] sm:pt-[5px] pb-[33px]"
+          >
+            Tlf: +45 43 55 77 11 info@deko.com
+          </p>
+        </div>
+        <div class="flex items-end justify-end h-full pr-[42px] pb-[35.27px]">
+          <div class="flex items-center gap-[7.54px] w-[75px]">
+            <img
+              src="./images/Facebook.svg"
+              alt="Facebook"
+              class="w-[33.73px] h-[33.73px] cursor-pointer"
+            />
+            <img
+              src="./images/LinkedIn.svg"
+              alt="LinkedIn"
+              class="w-[33.73px] h-[33.73px] cursor-pointer"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

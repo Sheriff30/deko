@@ -1,0 +1,283 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Avenir Next LT Pro";
+  src: url("./fonts/AvenirNextLTPro-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Avenir Next LT Pro";
+  src: url("./fonts/AvenirNextLTPro-Bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  font-family: "Avenir Next LT Pro", sans-serif;
+}
+
+img {
+  mix-blend-mode: multiply;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.black-box-image {
+  mix-blend-mode: normal;
+}
+
+/* Hero */
+.hero-container {
+  background-image: url("./images/HeroBg.svg");
+  height: 858px;
+  background-repeat: no-repeat;
+  max-width: 1440px;
+  background-color: #d9d8d8 !important;
+  margin: auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .hero-container {
+    background-position: center;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .hero-container {
+    background-size: 219%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .title {
+    max-width: 350px;
+    font-size: 35px !important;
+  }
+}
+
+.image-res {
+  padding-right: 181px;
+}
+
+.title-be {
+  font-size: 50px;
+}
+
+/* Second Section */
+.section-two {
+  padding-left: 225px;
+}
+
+.section-two-div {
+  padding-left: 569px;
+  /* padding-right: 270px; */
+}
+
+@media (max-width: 1372px) {
+  .section-two-div {
+    padding-left: 500px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .section-two-div {
+    padding-left: 400px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .section-two-div {
+    padding-left: 300px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .section-two-div {
+    padding-left: 230px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .section-two-div {
+    padding-left: 0;
+  }
+
+  .section-two {
+    padding-left: 0;
+  }
+}
+
+/* Én profil. Mange muligheder. */
+.image-height {
+  height: 500px;
+}
+
+/* Kleme */
+.content-klemme {
+  padding-left: 114px;
+  padding-right: 213px;
+}
+
+@media screen and (max-width: 1024px) {
+  .content-klemme {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/* Points */
+@media screen and (max-width: 700px) {
+  .image-res {
+    padding-right: 150px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .image-res {
+    padding-right: 130px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .image-res {
+    padding-right: 110px;
+  }
+}
+
+@media screen and (max-width: 473px) {
+  .image-res {
+    padding-right: 100px;
+  }
+
+  .title-be {
+    font-size: 45px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .image-res {
+    padding-right: 76px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .title-be {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .title-be {
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 336px) {
+  .title-be {
+    font-size: 32px;
+  }
+}
+
+/* Hvis du kan tænke det, kan vi levere det.  */
+.content {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 34px;
+  transition: all 0.3s ease;
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 1024px) {
+  .content {
+    padding: 10px 15px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .position-dot1 {
+    left: 12.5% !important;
+  }
+}
+
+.text-content {
+  position: relative;
+  padding-right: 34px;
+}
+
+/* Slider */
+.swiper-slide {
+  width: 100%;
+}
+
+.swiper-wrapper {
+  display: flex;
+  gap: 2px;
+}
+
+.m-slider {
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.m-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.swiper-container {
+  padding-left: 50%;
+  padding-right: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.swiper-container1 {
+  width: 100%;
+}
+
+/* Mindre lyd. Mere lys. */
+
+/* Animations Classes */
+
+.text-animation {
+  display: block;
+  overflow: hidden;
+  padding-bottom: 11px;
+  margin-top: -11px;
+}
+
+.text-animation span {
+  transform: translateY(100px);
+  opacity: 0;
+
+  display: inline-block;
+}
+
+.cards {
+  overflow: hidden;
+}
+
+.card {
+  overflow: hidden;
+}
+
+.img-container {
+  opacity: 0;
+  transform: scale(1.1);
+  overflow: hidden;
+}
+.img-container3 {
+  opacity: 0.2;
+  filter: blur(1.5px);
+}
