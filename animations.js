@@ -61,10 +61,8 @@ const animateOnScrollimg3 = (entries, observer) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       gsap.to(entry.target, {
-        opacity: 1,
-        duration: 0.8,
+        duration: 1.5,
         scale: 1,
-        filter: "blur(0)",
       });
       observer.unobserve(entry.target);
     }
@@ -72,7 +70,7 @@ const animateOnScrollimg3 = (entries, observer) => {
 };
 
 const observerimg3 = new IntersectionObserver(animateOnScrollimg3, {
-  threshold: 0.3,
+  threshold: 0.5,
 });
 
 document.querySelectorAll(".img-container3").forEach((imgContainer3) => {
