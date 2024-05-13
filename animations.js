@@ -70,7 +70,7 @@ const animateOnScrollimg3 = (entries, observer) => {
 };
 
 const observerimg3 = new IntersectionObserver(animateOnScrollimg3, {
-  threshold: 0.5,
+  threshold: 0.3,
 });
 
 document.querySelectorAll(".img-container3").forEach((imgContainer3) => {
